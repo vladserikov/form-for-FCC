@@ -1,0 +1,49 @@
+:root{
+    --main-color: #2E4053;
+    --text-color: #F0F3F4;
+}
+*{
+    border: none;
+}
+body, input, button, select{
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+header{
+    width: 100%;
+    background-color: rgb(30, 81, 136);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.title{
+    font-size: 28px;
+    transition: 1.1s;
+}
+.title:hover{
+    text-shadow: 3px -3px rgb(36, 2, 36), 3px 3px rgb(36, 2, 36);
+}
+main{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    padding: 10px;
+    border: 2px solid rgb(49, 89, 175);
+    border-radius: 10px;
+    background-color: rgb(8, 4, 68);
+    box-shadow: 5px 5px 10px rgb(44, 26, 26),
+    -5px 5px 10px rgb(44, 26, 26),
+    -5px -5px 10px rgb(44, 26, 26);
+}
+.descriotion{
+    font-size: 22px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+form{
+    display: grid;
+}
+
+
