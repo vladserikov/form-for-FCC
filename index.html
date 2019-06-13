@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form for FCC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1 class="title">Service form</h1></header>
+    <main>
+        <p class="descriotion">Form for data collection</p>
+        <form action="post" id="sevey-form">
+            <label for="name">You name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <label for="email">You email:</label>
+            <input type="email" id="email" name="email" placeholder="email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <fieldset>
+                <legend>You gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="men">Men</label>
+                <input type="radio" name="gender" id="men" value="men">
+            </fieldset>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="150" required>
+            <fieldset>
+                <legend>Movement methods</legend>
+                <label for="afoot">On foot</label>
+                <input type="checkbox" name="move" id="afoot" value="afoot">
+                <label for="public">Public transit</label>
+                <input type="checkbox" name="move" id="publick" value="publick">
+                <label for="car">Car</label>
+                <input type="checkbox" name="move" id="car" value="car">
+                <label for="allno">Don't like everything</label>
+                <input type="checkbox" name="move" id="allno" value="allno">
+            </fieldset>
+            <select name="degree" id="degree">
+                <option value="notdegree">Not degree</option>
+                <option value="assocciate">Assoсciate Degree</option>
+                <option value="bachelor">Bachelor</option>
+                <option value="masters">Masters student</option>
+                <option value="postgraduate">PhD student</option>
+            </select>
+            <label for="number">You like number</label>
+            <input type="number" name="number" id="number" min="0">
+            <label for="browsers">You like browsers</label>
+            <input list="browser" name="browser" id="browsers" placeholder="Internet Explorer">
+            <datalist id="browser">
+                <option value="Internet Explorer"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
