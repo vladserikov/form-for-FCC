@@ -14,42 +14,43 @@
     <main>
         <p class="descriotion">Form for data collection</p>
         <form action="post" id="sevey-form">
-            <label for="name">You name:</label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <label for="email">You email:</label>
+            <label><span>You name:</span>
+            <input type="text" id="name" name="name" placeholder="Name" required></label>
+            <label><span>You email:</span>
             <input type="email" id="email" name="email" placeholder="email" required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></label>
             <fieldset>
-                <legend>You gender</legend>
-                <label for="male">Male</label>
-                <input type="radio" name="gender" id="male" value="male">
-                <label for="men">Men</label>
-                <input type="radio" name="gender" id="men" value="men">
+                <legend>You gender:</legend>
+                <label><span>Male</span>
+                <input type="radio" name="gender" id="male" value="male"></label>
+                <label><span>Men</span>
+                <input type="radio" name="gender" id="men" value="men"></label>
             </fieldset>
-            <label for="age">Age</label>
-            <input type="number" name="age" id="age" min="1" max="150" required>
+            <label><span>Age:</span>
+            <input type="number" name="age" id="age" min="1" max="150" required></label>
             <fieldset>
-                <legend>Movement methods</legend>
-                <label for="afoot">On foot</label>
-                <input type="checkbox" name="move" id="afoot" value="afoot">
-                <label for="public">Public transit</label>
-                <input type="checkbox" name="move" id="publick" value="publick">
-                <label for="car">Car</label>
-                <input type="checkbox" name="move" id="car" value="car">
-                <label for="allno">Don't like everything</label>
-                <input type="checkbox" name="move" id="allno" value="allno">
+                <legend>Movement methods:</legend>
+                <label><span>On foot</span>
+                <input type="checkbox" name="move" id="afoot" value="afoot"></label>
+                <label><span>Public transit</span>
+                <input type="checkbox" name="move" id="publick" value="publick"></label>
+                <label><span>Car</span>
+                <input type="checkbox" name="move" id="car" value="car"></label>
+                <label><span>Don't like everything</span>
+                <input type="checkbox" name="move" id="allno" value="allno"></label>
             </fieldset>
+            <label><span>You degree:</span>
             <select name="degree" id="degree">
                 <option value="notdegree">Not degree</option>
                 <option value="assocciate">Assoсciate Degree</option>
                 <option value="bachelor">Bachelor</option>
                 <option value="masters">Masters student</option>
                 <option value="postgraduate">PhD student</option>
-            </select>
-            <label for="number">You like number</label>
-            <input type="number" name="number" id="number" min="0">
-            <label for="browsers">You like browsers</label>
-            <input list="browser" name="browser" id="browsers" placeholder="Internet Explorer">
+            </select></label>
+            <label><span>You like number:</span>
+            <input type="number" name="number" id="number" min="0"></label>
+            <label><span>You like browsers:</span>
+            <input list="browser" name="browser" id="browsers" placeholder="Internet Explorer"></label>
             <datalist id="browser">
                 <option value="Internet Explorer"></option>
                 <option value="Firefox"></option>
