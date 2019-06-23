@@ -48,6 +48,7 @@ form{
     height: 80%;
     justify-content: space-between;
     font-size: 20px;
+    box-shadow: 2px 2px 5px 5px rgb(170, 31, 31);
 }
 label{
     display: flex;
@@ -78,10 +79,18 @@ button{
     color: lightblue;
     border-radius: 8px;
     transition: 0.5s;
+    box-shadow: 3px 1px 5px rgb(24, 11, 143),
+    -3px -1px 5px rgb(24, 11, 143);
 }
 button:hover{
     background-color: #622fd1;
     color: darkblue;
+}
+input:focus{
+    box-shadow: 4px 2px 4px rgb(24, 11, 143);
+}
+input::placeholder{
+    color: lightgoldenrodyellow;
 }
 @media(max-width: 411px){
     h1{
